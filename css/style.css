@@ -1,0 +1,240 @@
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*↑テンプレート？*/
+*{
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  max-height: 100px;
+  position: fixed;
+  background-color: #CCFFCC;
+  background-image: url(../images/header.png);
+  border-bottom: 1px solid black;
+}
+.title{
+  width:auto;
+  height: 80px;
+  float: left;
+  padding: 0 20px
+}
+#switch{
+  display: none;
+}
+.index li{
+  float: left;
+  width:150px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.index a{
+  display:block;
+  color: black;
+  padding: 25px 10px
+}
+.index a:hover{
+  background-color: rgba(37, 222, 46, 0.5);
+  transition: all 0.5s;
+}
+.hidden-index{
+  display: none;
+}
+
+.main{
+  width: 100%;
+  padding-top:70px;
+  height: auto;
+  background-image: url(../images/background.png);
+  background-size:cover;
+  background-attachment: fixed;
+  padding-bottom: 20px;
+}
+
+.contents{
+  background-color: rgba(255,255,255,0.6);
+  width:96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  padding: 0 5%;
+  padding-bottom: 30px;
+}
+.contents h2{
+  padding-top: 50px;
+}
+.contents h4{
+  font-size: 30px;
+  font-weight: bold;
+}
+.contents h5{
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.poster-container{
+  width:750px;
+  margin: 0 auto;
+}
+.poster{
+  display: inline-block;
+  width: 400px;
+  padding: 10px 0;
+}
+
+/*-----*/
+.detail{
+  display: inline-block;
+  padding:0 15px;
+}
+.place{
+  margin-top: 15px;
+}
+.map{
+  width: 100%;
+  height: 320px;
+}
+.sentence{
+  word-wrap: break-word;
+  font-size: 18px;
+  font-weight:bold;
+}
+
+/*-----*/
+.timetable{
+  width: 420px;
+  margin: 0 auto;
+}
+#schedule p{
+  font-size: 20px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+/*-----*/
+.introduction-container{
+  width:450px;
+  margin: 0 auto;
+  word-wrap: break-word;
+  padding-bottom: 30px;
+}
+.intro{
+  margin-top: 20px;
+  /*
+  cursor:pointer;
+  */
+}
+.enja-pic{
+  width: 40%;
+  height: auto;
+  display: inline-block;
+  cursor: pointer;
+}
+.enja{
+  margin-bottom: auto;
+  border-bottom: 1px dotted black;
+}
+.show-btn{
+  float:right;
+  display: none;
+}
+.info{
+  /*またやりたくなったら外してね
+  display: none;
+  */
+}
+.full-pic-container{
+  position: fixed;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  margin: 0 5%;
+  background-color: rgba(255,255,255,0.7);
+  text-align: center;
+  display: none;
+}
+.full-pic{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 5% 5%;
+  object-fit: contain;
+}
+.close-btn-container{
+  position: fixed;
+  top:5%;
+  right: 5%;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(128,128,128,0.8);
+  border-radius: 10px 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.close-btn-container:hover{
+  background-color: rgb(100,100,100);
+  transition: all 0.5s;
+}
+.close-btn{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/*-----*/
+.contact{
+  background-image: url(../images/footer.png);
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  display: inline-block;
+}
+.contact h2{
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.contact-container{
+  padding: 10px 20px;
+  text-align: center;
+}
+.contact-container a{
+  float: right;
+  color: black;
+}
+.mail-image{
+  width: 250px;
+  height: auto;
+  margin: 20px;
+}
+
+/*--付け加え--*/
+#news h1{
+  text-align: center;
+}
+
+.ending img{
+  width: 100%;
+  padding: 1%;
+}
